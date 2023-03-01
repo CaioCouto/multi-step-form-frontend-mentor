@@ -1,0 +1,140 @@
+@import url("/static/css/form.css");
+@import url("/static/css/form0.css");
+@import url("/static/css/form1.css");
+@import url("/static/css/form2.css");
+@import url("/static/css/form3.css");
+@import url("/static/css/form4.css");
+
+:root {
+    /* Primary */
+
+    --marineBlue: hsl(213, 96%, 18%);
+    --purplishBlue: hsl(243, 100%, 62%);
+    --pastelBlue: hsl(228, 100%, 84%);
+    --lightBlue: hsl(206, 94%, 87%);
+    --strawberryRed: hsl(354, 84%, 57%);
+
+    /* Neutral */
+
+    --coolGray: hsl(231, 11%, 63%);
+    --lightGray: hsl(229, 24%, 87%);
+    --magnolia: hsl(217, 100%, 97%);
+    --alabaster: hsl(231, 100%, 99%);
+    --white: hsl(0, 0%, 100%);
+
+    /* Font */
+    --ff: "Ubuntu", sans-serif;
+    --fs: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: var(--fs);
+    font-family: var(--ff);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.sidebar {
+    gap: 1rem;
+    height: 15vh;
+    padding: 1rem;
+    padding-top: 5rem;
+
+    display: flex;
+    justify-content: center;
+
+    background: url("/static/images/bg-sidebar-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.sidebar-bubble {
+    width: 10px;
+    height: 10px;
+    padding: 1rem;
+    border-radius: 50%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 500;
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+
+.sidebar-bubble.active {
+    border: 0;
+    color: #000;
+    background: var(--lightBlue);
+}
+
+.sidebar-section-text {
+    display: none;
+}
+
+.footer {
+    padding: 1rem;
+    margin-top: auto;
+    text-align: center;
+}
+
+@media (min-width: 1200px) {
+    .sidebar {
+        height: auto;
+        gap: 1.5rem;
+        flex-grow: 1;
+        padding: 1.5rem;
+        border-radius: 10px;
+    
+        flex-direction: column;
+        justify-content: start;
+    
+        background-image: url("/static/images/bg-sidebar-desktop.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .sidebar-section {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .sidebar-section-text {
+        display: block;
+        color: var(--coolGray);
+    }
+    
+    .sidebar-section-stepTitle {
+        color: var(--white);
+        font-weight: 700;
+    }
+
+    .main {
+        gap: 4rem;
+        flex-grow: .5;
+        margin: auto;
+        width: 75%;
+        min-height: 75%;
+        flex-direction: row;
+        box-sizing: border-box;
+    }
+}

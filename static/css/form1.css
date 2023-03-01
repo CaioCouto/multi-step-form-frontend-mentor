@@ -1,0 +1,103 @@
+.form1-helperText {
+    display: none;
+    font-size: .75rem;
+    color: var(--strawberryRed);
+}
+
+.form1-helperText.active { display: block; }
+
+.form1-section {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 1px solid var(--lightGray);
+
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+}
+
+.form1-section:hover, 
+.form1-section:focus { cursor: pointer; }
+
+.form1-section.selected { border: 1px solid var(--purplishBlue); }
+
+.form1-section p { margin-bottom: .3rem; }
+
+.form1-label { font-weight: 700; }
+
+.form1-pricing { color: var(--coolGray); }
+
+.form1-discount {
+    display: none;
+    font-size: .75rem;
+    color: var(--marineBlue);
+}
+
+.form1-discount.active { display: block; }
+
+
+.form1-switch-button {
+    width: 50px;
+    border-radius: 50px;
+    background-color: var(--marineBlue);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form1-switch-buttonMonthly,
+.form1-switch-buttonYearly {
+    display: none;
+    margin: 0 .25rem;
+    width: 30%;
+    height: 80%;
+    border-radius: 50px;
+    background-color: var(--white);
+}
+
+.form1-switch-buttonMonthly.active,
+.form1-switch-buttonYearly.active { display: block; }
+
+.form1-switch-buttonMonthly { margin-right: auto; }
+
+.form1-switch-buttonYearly { margin-left: auto; }
+
+.form1-section-buttons {
+    border: 0;
+    margin-bottom: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (min-width:900px) {
+    .form1-section img {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .form1-section-plans {
+        display: flex;
+        gap: 1.5rem;
+        height: 30%;
+        margin: 2rem;
+    }
+
+    .form1-section {
+        width: 30%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+    }
+    .form1-section img {
+        margin: 0;
+    }
+}

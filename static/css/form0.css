@@ -1,0 +1,33 @@
+.form0-textDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form0-helperText {
+    display: none;
+    font-size: .8rem;
+    color: var(--strawberryRed);
+}
+
+.form0-helperText.active { display: block; }
+
+.form-input {
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid var(--lightGray);
+}
+
+.form-input:hover,
+.form-input:focus {
+    cursor: pointer;
+    border: 1px solid var(--purplishBlue);
+}
+
+.form-input.invalid {
+    border: 1px solid var(--strawberryRed);
+}
+
+.form-input::placeholder {
+    font-weight: 700;
+    color: var(--coolGray);
+}

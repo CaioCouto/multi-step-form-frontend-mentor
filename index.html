@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon-32x32.png">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Multi-step form</title>
+</head>
+<body>
+  
+
+  <main class="main">
+    <sidebar class="sidebar">
+      <section class="sidebar-section">
+        <div class="sidebar-bubble">1</div>
+        <div class="sidebar-section-text">
+          <p class="sidebar-section-stepText">Step 1</p> 
+          <p class="sidebar-section-stepTitle">Your info</p>
+        </div>
+      </section>
+      
+      <section class="sidebar-section">
+        <div class="sidebar-bubble">2</div>
+        <div class="sidebar-section-text">
+          <p class="sidebar-section-stepText">Step 2</p> 
+          <p class="sidebar-section-stepTitle">Select plan</p>
+        </div>
+      </section>
+      
+      <section class="sidebar-section">
+        <div class="sidebar-bubble">3</div>
+        <div class="sidebar-section-text">
+          <p class="sidebar-section-stepText">Step 3</p> 
+          <p class="sidebar-section-stepTitle">Add-ons</p>
+        </div>
+      </section>
+      
+      <section class="sidebar-section">
+        <div class="sidebar-bubble">4</div>
+        <div class="sidebar-section-text">
+          <p class="sidebar-section-stepText">Step 4</p> 
+          <p class="sidebar-section-stepTitle">Summary</p>
+        </div>
+      </section>
+    </sidebar>
+
+    <form id="form0" class="form">
+      <section class="form-section">
+        <h1 class="form-title">Personal info</h1>
+        <p class="form-description">Please provide your name, email address, and phone number.</p>
+      </section>
+    
+      <section class="form-section">
+        <div class="form0-textDiv">
+          <label for="form-input" class="form-label">Name</label>
+          <p class="form0-helperText form0-name-helperText"></p>          
+        </div>
+        <input id="form-input" class="form-input" name="name" type="text" placeholder="e.g. Stephen King"/>
+      </section>
+    
+      <section class="form-section">
+        <div class="form0-textDiv">
+          <label for="form-input" class="form-label">Email Address</label>
+          <p class="form0-helperText form0-email-helperText"></p>          
+        </div>
+        <input id="form-input" class="form-input" name="email" type="text" placeholder="e.g. stephenking@lorem.com">
+      </section>
+    
+      <section class="form-section">
+        <div class="form0-textDiv">
+          <label for="form-input" class="form-label">Phone Number</label>
+          <p class="form0-helperText form0-phone-helperText"></p>          
+        </div>
+        <input id="form-input" class="form-input" name="phone" type="text" placeholder="e.g. +1 234 567 890">
+      </section>
+
+      <section class="form-section form-section-buttons">
+        <button class="form-button form-button-next" type="button">Next Step</button>
+      </section>
+    </form>
+
+    <form id="form1" class="form">
+      <section class="form-section">
+        <h1 class="form-title">Select your plan</h1>
+        <p class="form-description">You have the option of monthly or yearly billing.</p>
+        <p class="form1-helperText">A plan must be selected to continue.</p>
+      </section>
+      
+      <section class="form1-section-plans">
+        <div class="form1-section">
+          <img src="static/images/icon-arcade.svg" alt="An Atari-like joystick">
+          <div>
+            <p class="form-label form1-label">Arcade</p>
+            <p class="form1-pricing">$9/mo</p>
+            <p class="form1-discount">2 months free</p>
+          </div>
+        </div>
+      
+        <div class="form1-section">
+          <img src="static/images/icon-advanced.svg" alt="An Atari-like joystick">
+          <div>
+            <p class="form-label form1-label">Advanced</p>
+            <p class="form1-pricing">$12/mo</p>
+            <p class="form1-discount">2 months free</p>
+          </div>
+        </div>
+      
+        <div class="form1-section">
+          <img src="static/images/icon-pro.svg" alt="An Atari-like joystick">
+          <div>
+            <p class="form-label form1-label">Pro</p>
+            <p class="form1-pricing">$15/mo</p>
+            <p class="form1-discount">2 months free</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="form-switch">
+        <label for="switch">Monthly</label>
+        <div id="switch" class="form-switch-button form1-switch-button">
+          <div class="form1-switch-buttonMonthly"></div>
+          <div class="form1-switch-buttonYearly"></div>
+        </div>
+        <label for="switch">Yearly</label>
+      </section>
+
+      <section class="form-section form-section-buttons form1-section-buttons">
+        <button class="form-button form-button-previous" type="button">Go Back</button>
+        <button class="form-button form-button-next" type="button">Next Step</button>
+      </section>
+    </form>
+    
+    <form id="form2" class="form">
+      <section class="form-section">
+        <h1 class="form-title">Pick add-ons</h1>
+        <p class="form-description">Add-ons help enhance your gaming experience.</p>
+      </section>
+    
+      <section class="form2-section">
+        <input type="checkbox" name="form2-input" id="form2-input" class="form2-input" aria-label="pick add-ons' online service checkbox">
+        <div>
+          <p for="form-input" class="form-label form3-label">Online service</p>
+          <p class="form2-description">Access to multiplayer games</p>
+        </div>
+        <p class="form2-pricing">+$1/mo</p>
+      </section>
+    
+      <section class="form2-section">
+        <input type="checkbox" name="form2-input" id="form2-input" class="form2-input" aria-label="pick add-ons' larger storage checkbox">
+        <div>
+          <p for="form-input" class="form-label form3-label">Larger storage</p>
+          <p class="form2-description">Extra 1TB of cloud save</p>
+        </div>
+        <p class="form2-pricing">+$2/mo</p>
+      </section>
+    
+      <section class="form2-section">
+        <input type="checkbox" name="form2-input" id="form2-input" class="form2-input" aria-label="pick add-ons' customizable profile checkbox">
+        <div>
+          <p for="form-input" class="form-label form3-label">Customizable Profile</p>
+          <p class="form2-description">Custom theme on your profile</p>
+        </div>
+        <p class="form2-pricing">+$2/mo</p>
+      </section>
+
+      <section class="form-section form-section-buttons form1-section-buttons">
+        <button class="form-button form-button-previous" type="button">Go Back</button>
+        <button class="form-button form-button-next" type="button">Next Step</button>
+      </section>
+
+    </form>
+
+    <form id="form3" class="form">
+      <section class="form-section">
+        <h1 class="form-title">Finishing up</h1>
+        <p class="form-description">Double-check everything looks OK before confirming.</p>
+      </section>
+    
+      <section class="form3-section"></section>
+      <section class="form3-section form3-section-addOns"></section>
+      <section class="form3-section"></section>
+
+      <section class="form-section form-section-buttons form1-section-buttons">
+        <button class="form-button form-button-previous" type="button">Go Back</button>
+        <button class="form-button form-button-confirm" type="button">Confirm</button>
+      </section>
+
+    </form>
+
+    <form id="form4" class="form">
+      <section class="form4-section">
+        <img src="/static/images/icon-thank-you.svg" alt="a red checkmark within a white circle and a red bigger circle">
+        <h1 class="form-title">Thank you!</h1>
+        <p class="form-description">Thanks for confirming your subscription! We hope you have fun 
+          using our platform. If you ever need support, please feel free 
+          to email us at support@loremgaming.com.</p>
+      </section>
+    </form>
+  </main>
+  
+  <footer class="footer">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
+    <p>Coded by <a href="https://github.com/CaioCouto" target="_blank">Caio Couto</a>.</p>
+  </footer>
+
+  <script src="static/js/main.js" type="module"></script>
+</body>
+</html>

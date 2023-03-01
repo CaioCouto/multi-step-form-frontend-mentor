@@ -1,0 +1,52 @@
+.form3-section {
+    margin-bottom: 1rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.form3-planLabel,
+.form3-planValue { 
+    text-transform: capitalize; 
+    font-weight: 700;
+    color: var(--marineBlue);
+}
+
+.form3-planChange {
+    color: var(--coolGray);
+    text-decoration: underline;
+}
+
+.form3-planChange:hover {
+    cursor: pointer;
+    color: var(--purplishBlue);
+}
+
+.form3-section-addOns {
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.form3-section-addOns div {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.form3-addOnLabel,
+.form3-totalLabel { color: var(--coolGray); }
+
+.form3-addOnValue { color: var(--marineBlue); }
+
+.form3-totalValue {
+    font-weight: 700;
+    color: var(--purplishBlue);
+}
+
+@media (min-width: 1200px) {
+    .form3-section {
+        margin-bottom: 2.5rem;
+    }
+}
