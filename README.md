@@ -50,8 +50,8 @@ Users should be able to:
 
 ### Links
 
-- [GitHub Pages](https://pages.github.com/) (not yet)
-- [Vercel](https://vercel.com/) (not yet)
+- [GitHub Pages](https://caiocouto.github.io/multi-step-form-frontend-mentor/) (not yet)
+- [Vercel](https://multi-step-form-frontend-mentor.vercel.app/) (not yet)
 
 ### Built with
 
